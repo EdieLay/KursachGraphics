@@ -5,8 +5,6 @@ from plotly.subplots import make_subplots
 import numpy as np
 import pandas as pd
 
-# from scipy import signal # для savgol_filter, если понадобится сглаживание
-
 def main():
     with open('C:/Users/user/source/repos/KursachChM/KursachChM/points.txt', 'r') as f:
         xn = int(f.readline())
