@@ -59,15 +59,15 @@ def main():
                                             showactive=False,
                                             type="buttons",
                                             buttons=[dict(label="►", method="animate", args=[None, {"fromcurrent": True,
-                                                                                                    "frame": {"duration": 20},
+                                                                                                    "frame": {"duration": 30},
                                                                                                     "transition": {"duration": 0}}]),
                                                      dict(label="❚❚", method="animate", args=[[None], {"frame": {"duration": 0, "redraw": False},
                                                                                                        "mode": "immediate",
                                                                                                        "transition": {"duration": 0}}])])],
                           title='Колебание струны',
                           xaxis_title="x",
-                          yaxis_title="u",
-                          yaxis_range=[-1,4])
+                          yaxis_title="u(x)",
+                          yaxis_range=[-2,2])
         fig.update_traces(hoverinfo="x+y")
         fig.layout.sliders = sliders
         fig.frames = frames
